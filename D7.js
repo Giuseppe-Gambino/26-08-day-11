@@ -217,10 +217,22 @@ console.log(quanti);
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+let titoli = [];
+const Titolo = movies.map(function (elemento) {
+  titoli.push(elemento.Title);
+});
+
+console.log(titoli);
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+
+let film = [];
+
+film = movies.filter((elemento) => elemento.Year > 1999);
+
+console.log(film);
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
