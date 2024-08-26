@@ -60,11 +60,12 @@ console.log(somma);
 */
 
 let listona = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const n = 2;
 
-listona2 = listona.map((elemento) => elemento + n);
+function add(lis, n = 1) {
+  return listona.map((elemento) => elemento * n);
+}
 
-console.log(listona2);
+console.log(add(listona, 2));
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
