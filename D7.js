@@ -60,9 +60,10 @@ console.log(somma);
 */
 
 let listona = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(listona);
 
 function add(lis, n = 1) {
-  return listona.map((elemento) => elemento * n);
+  return (listona2 = lis.map((elemento) => elemento * n));
 }
 
 console.log(add(listona, 2));
