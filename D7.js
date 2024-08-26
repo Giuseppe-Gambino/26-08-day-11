@@ -242,6 +242,18 @@ console.log(film);
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+let cosa = "tt4154796";
+
+const chi = movies.find((elemento) => elemento.imdbID === cosa);
+
+console.log(chi);
+
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+let quando = "2015";
+
+const quindi = movies.findIndex((elemento) => elemento.Year === quando);
+
+console.log(quindi);
